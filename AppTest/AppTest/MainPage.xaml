@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <StackPanel>
+        <StackPanel >
             <Image Source="Assets/SplashScreen.png" x:Name="image" Width="120" Height="120"></Image>
             <Button Content="Load Image" Tapped="onTappedButton"/>
         </StackPanel>

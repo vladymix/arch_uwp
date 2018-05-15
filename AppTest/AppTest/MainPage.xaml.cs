@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UWPCore;
+using UWPCore.Converters;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,7 +23,12 @@ namespace AppTest
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
     public sealed partial class MainPage : Page
+       
+
     {
+        List<String> items = new List<string>();
+
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -30,7 +36,11 @@ namespace AppTest
 
         private void onTappedButton(object sender, TappedRoutedEventArgs e)
         {
-            List<String> items = new List<string>();
+            CollectionEmptyToVisibilityConverter ol = new CollectionEmptyToVisibilityConverter();
+
+         var obj=   ol.Convert(items,null, null, null);
+
+
             if (CollectionsTools.IsNullOrEmpty(items)) {
             }
         }

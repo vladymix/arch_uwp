@@ -106,6 +106,11 @@ namespace UWPCore.Services
             this.size = withWideMaster;
         }
 
+        public void BackStackClear() {
+            var frame = (Frame)Window.Current.Content;
+            frame.BackStack.Clear();
+        }
+
         public Type getSourcePage(string pageKey) {
           return this.dictionaryPages[pageKey];
         }

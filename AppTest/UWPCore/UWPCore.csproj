@@ -107,6 +107,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CollectionsTools.cs" />
+    <Compile Include="Converters\BooleanToVisibility.cs" />
+    <Compile Include="Converters\CollectionEmptyToVisibilityConverter.cs" />
     <Compile Include="ImageTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IMasterDetailPage.cs" />

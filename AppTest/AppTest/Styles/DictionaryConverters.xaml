@@ -1,0 +1,9 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cnt="using:UWPCore.Converters">
+
+    <cnt:BooleanToVisibility x:Name="BooleanToVisibility" />
+    <cnt:CollectionEmptyToVisibilityConverter x:Name="CollectionEmptyToVisibility" />
+
+</ResourceDictionary>
