@@ -11,7 +11,7 @@ namespace UWPCore.Converters
 
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var collectionEmpty = CollectionsTools.IsNullOrEmpty((IEnumerable<object>)targetType);
+            var collectionEmpty = CollectionsTools.IsNullOrEmpty((ICollection<object>)value);
 
             return collectionEmpty ? Visibility.Visible : Visibility.Collapsed;
         }
