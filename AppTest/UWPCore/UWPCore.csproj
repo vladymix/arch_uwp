@@ -106,19 +106,29 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AppEnvironment.cs" />
     <Compile Include="CollectionsTools.cs" />
+    <Compile Include="Controls\ProcessAsync.cs" />
+    <Compile Include="Controls\Toast.cs" />
+    <Compile Include="Controls\ToastContent.cs" />
     <Compile Include="Converters\BooleanToVisibility.cs" />
     <Compile Include="Converters\CollectionEmptyToVisibilityConverter.cs" />
     <Compile Include="ImageTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IMasterDetailPage.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="TitleBarTools.cs" />
     <EmbeddedResource Include="Properties\UWPCore.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.8</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsMobile, Version=10.0.16299.0">
+      <Name>Windows Mobile Extensions for the UWP</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
